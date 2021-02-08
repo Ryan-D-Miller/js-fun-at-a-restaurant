@@ -15,7 +15,6 @@ class Chef {
 
   checkForFood(foodItem){
     for(var i = 0; i < this.restaurant.menus[foodItem.type].length; i++){
-      console.log("Im here!");
       if(this.restaurant.menus[foodItem.type][i].name === foodItem.name){
         return `Yes, we're serving ${foodItem.name} today!`;
       }
